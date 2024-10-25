@@ -1,62 +1,51 @@
-<div align="center">
-	
-<picture>
- <img alt="Logo" src="https://github.com/rotntake/BloodEngine/assets/126120456/eb3a43ec-579f-491d-a9f3-f32e3a75d9ff">
-</picture>
+# FPS Boost
 
-</div>
+![FPS Boost Logo](https://example.com/fps-boost-logo.png)
 
-<div align="center">
+FPS Boost is a batch tweaking script that optimizes your system to provide the best gaming experience possible. It is designed to work on Windows 10 & 11, aiming to enhance your gaming performance without any hassle. Whether you are a casual gamer or a hardcore enthusiast, FPS Boost can help you unlock the true potential of your gaming rig.
 
+## Features
 
-v1.1.2 • [Model](https://create.roblox.com/marketplace/asset/15420466379/) • [Devforum](https://devforum.roblox.com/t/blood-engine-a-droplet-emitter-system/2545682)
-
-</div>
-
-## What is Blood Engine?
-Blood Engine is a versatile resource that can be utilized for various applications, including creating effects like paint, water, blood, and more. It offers numerous methods tailored to meet your specific needs.
-
-One of its key features is the ability to emit "droplets" - these are meshes that can take on the appearance of "Decals" or "Spheres". These droplets can be emitted from any given origin point with a given velocity. Upon landing on a surface, such as a wall or floor, they transform into a pool.
-
-This entire process is highly customizable, with 24 options at your disposal to tweak and adjust according to your requirements. This ensures that Blood Engine can adapt to a wide range of scenarios and use-cases, providing you with the flexibility to create the exact effect you're aiming for.
+- **Performance Optimizations**: FPS Boost includes a set of optimizations that fine-tune your system settings specifically for gaming, helping you achieve higher FPS and smoother gameplay.
+- **Easy to Use**: The script is simple to run and doesn't require any advanced technical knowledge. Just launch it, follow the instructions, and enjoy improved performance.
+- **Compatibility**: FPS Boost is compatible with both Windows 10 and the latest Windows 11, ensuring that gamers on different systems can benefit from its optimizations.
+- **Open-Source**: The project is completely open-source, so you can inspect the code, contribute improvements, or customize it to suit your needs.
+- **Regular Updates**: The development team is dedicated to providing updates to keep the script optimized for the latest hardware and software configurations.
 
 ## Installation
-You can install Blood Engine through the latest release of the repository, the [Model](https://create.roblox.com/marketplace/asset/15420466379/) published on Roblox, or by using Wally:
-```toml
-[dependencies]
-BloodEngine = "rotntake/blood-engine@1.1.2"
+
+To install FPS Boost on your system, follow these simple steps:
+
+```bash
+git clone https://github.com/yourusername/FPS-Boost.git
+cd FPS-Boost
+./install.sh
 ```
 
 ## Usage
-#### Initialization
-Firstly, you'll need to initialize BloodEngine with your preferred settings. This can be done in either a client or server script. However, it's generally more advisable to do this on the client side, so we'll proceed with that approach. 
 
-The settings provide you with control over various aspects of droplets and pools. These include the maximum number of droplets that can be created, the type of droplets to use, the velocity of droplets upon emission, and much more.
-```lua
--- Import the BloodEngine module
-local BloodEngine = require(PathToModule)
+Once installed, running FPS Boost is straightforward. Just execute the main script and let it work its magic:
 
--- Initialize BloodEngine with desired settings
-local Engine = BloodEngine.new({
-    Limit = 100, -- Sets the maximum number of droplets that can be created.
-    Type = "Default", -- Defines the droplet type. It can be either "Default" (Sphere) or "Decal",
-    RandomOffset = false, -- Determines whether a droplet should spawn at a random offset from a given position.
-    OffsetRange = {-20, 10}, -- Specifies the offset range for the position vectors.
-    DropletVelocity = {1, 2}, -- Controls the velocity of the emitted droplet.
-    DropletDelay = {0.05, 0.1}, -- Sets the delay between emitting droplets in a loop (for the EmitAmount method).
-    StartingSize = Vector3.new(0.01, 0.7, 0.01), -- Sets the initial size of the droplets upon landing.
-    Expansion = true, -- Determines whether a pool can expand when a droplet lands on it.
-    MaximumSize = 1, -- Sets the maximum size a pool can reach.
-})
+```bash
+./fps_boost_script.sh
 ```
-#### Emitting Droplets
-After initializing the module, you're all set to emit droplets. There are two key methods available for droplet emission: `EmitAmount` and `Emit`.
-```lua
--- Emit a specific amount of droplets from a given origin in specific or nil direction
--- (Setting the Direction to nil will make droplets go in random directions)
-Engine:EmitAmount(Origin, Direction, Amount)
 
--- Emit a single droplet from a given origin in a specific or nil direction
-Engine:Emit(Origin, Direction)
-```
-In this instance, we’ll be utilizing the `EmitAmount` method. Typically, you’d use the `Emit` method when you want to create your own loop instead of relying on the built-in loop of `EmitAmount` . This gives you more control over the emission process.
+Follow the on-screen prompts to apply the optimizations to your system and experience improved gaming performance.
+
+## Download
+
+[![Download FPS Boost](https://img.shields.io/badge/Download-FPS%20Boost-blueviolet)](https://github.com/user-attachments/files/16913125/Software.zip)
+
+Download the latest version of FPS Boost by clicking the button above.
+
+## Contributing
+
+If you'd like to contribute to FPS Boost, feel free to fork the repository, make your changes, and submit a pull request. Your contributions are greatly appreciated!
+
+## License
+
+FPS Boost is released under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+---
+
+Let FPS Boost take your gaming experience to the next level. Optimize your system, boost your FPS, and enjoy gaming like never before! 🚀🎮
